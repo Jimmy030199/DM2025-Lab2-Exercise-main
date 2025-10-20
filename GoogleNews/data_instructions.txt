@@ -1,0 +1,4 @@
+Make sure that the data is correctly copied to this folder:
+GoogleNews-vectors-negative300.bin
+
+Download from here: https://www.kaggle.com/datasets/didiersalazar/google-news-vectors

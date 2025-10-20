@@ -1,0 +1,231 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">audience_impact</span> <span class="lx-label" style="background-color:#C8E6C9;">opinion_statement</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        **Page 1**
+&quot;&quot;&quot;
+Dan Baldwin
+Group 4
+Auteur Review - Interstellar 
+I believe Christopher Nolan: the director behind the 2014 sci-ﬁ/adventure cinematic ‘Interstellar,’ 
+<span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#C8E6C9;">to be a very intellectual and imaginative inventive talent</span>.  
+His style in his previous ﬁlms sets characters in epic unique locations, with gargantuan issues to 
+face, and <span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">artistically impresses the audience</span> with how the characters solve their problems. For 
+example, in Nolan’s 2010 ﬁlm ‘Inception,’ he tackles the idea of dreams, and sets his characters 
+diving through dreams within dreams within even more dreams to complete their goals. Because 
+this idea <span class="lx-highlight" data-idx="2" style="background-color:#C8E6C9;">is so farfetched</span>, and dreams are a subject in which science has made little factual 
+discovery in, Nolan is free to use his creativity to present ideas such as landscapes folding in on 
+themselves and corridors spinning, <span class="lx-highlight" data-idx="3" style="background-color:#D2E3FC;">without seeming unrealistic</span>. 
+This brain-racking epic theme is once again evident in ‘Interstellar,’ as Nolan sets his characters 
+during <span class="lx-highlight" data-idx="4" style="background-color:#C8E6C9;">a</span> second American dust bowl on future Earth. The world is short of food, and will soon be 
+uninhabitable. So, ex-NASA pilot ‘Cooper’ (Matthew McConaughey) is summoned back to space 
+travel in a bid to ﬁnd a new planet for the species to inhabit. Luckily for Cooper and his team, <span class="lx-highlight" data-idx="5" style="background-color:#C8E6C9;">a</span> 
+black hole orbiting Saturn can transport them further into space to land on these potential 
+planets. 
+Throughout the ﬂick, the crew explore multiple worlds - again feeding Nolan’s mind more 
+opportunities to create crazy scenarios. For example, one planet that Cooper and his friends, 
+‘Brand,’ (Anne Hathaway) and ‘Romilly,’ (David Gyasi) visit initially <span class="lx-highlight" data-idx="6" style="background-color:#C8E6C9;">seems like an inﬁnite sea of two 
+feet deep water</span>. <span class="lx-highlight" data-idx="7" style="background-color:#C8E6C9;">Not threatening at all right?</span> Well think again, because the crew suddenly ﬁnd out 
+that a giant 100ft tidal wave is about to hit them, and <span class="lx-highlight" data-idx="8" style="background-color:#C8E6C9;">they have minutes to ﬂy away</span>. Nolan <span class="lx-highlight" data-idx="9" style="background-color:#C8E6C9;">further 
+increases the stakes</span> in this scene as it is explained that every hour spent on this planet counts for 
+seven years on earth, meaning the planet will be destroyed before they return if their ship sinks. 
+At the climax of the ﬁlm, the crew end up sending themselves through a black hole into a 
+tesseract (a 3D representation of a larger dimension) to ﬁnd the ‘secret to harnessing gravity’ 
+which will let the human race bend space-time in order to survive oﬀ earth. <span class="lx-highlight" data-idx="10" style="background-color:#C8E6C9;">I know. Mental.</span> 
+<span class="lx-highlight" data-idx="11" style="background-color:#C8E6C9;">The imagination that Nolan possesses and implicates into ‘Interstellar’ is farfetched and 
+wonderful</span>, <span class="lx-highlight" data-idx="12" style="background-color:#D2E3FC;">not only impressing his audience with the appealing visuals he creates, but induces 
+them to think and discuss what is going on due its scientiﬁc depth</span>. Personally, as someone who is 
+bamboozled by the idea of how big the universe is, <span class="lx-highlight" data-idx="13" style="background-color:#C8E6C9;">I ﬁnd it unendingly entertaining</span> to repeatedly 
+watch this ﬁlm and understanding it more each time, and <span class="lx-highlight" data-idx="14" style="background-color:#D2E3FC;">can only hope the technology portrayed 
+will one day come true</span>. 
+Overall, ‘Interstellar’ is a clear example of Nolan’s auteur talent, as he once again ﬁgments yet 
+another cluster of conditions for us to marvel at. With <span class="lx-highlight" data-idx="15" style="background-color:#C8E6C9;">a fantastic score from world famous 
+composer Hanz Zimmer</span>, <span class="lx-highlight" data-idx="16" style="background-color:#D2E3FC;">his epic, orchestral theme sets the audience in the palm of his hands</span> as 
+we stress over how we are all going to be saved once again.
+&quot;&quot;&quot;
+
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="16" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/17</span> |
+          Pos <span id="posInfo">[166-224]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "opinion_statement", "text": "to be a very intellectual and imaginative inventive talent", "color": "#C8E6C9", "startPos": 166, "endPos": 224, "beforeText": "an Baldwin\nGroup 4\nAuteur Review - Interstellar \nI believe Christopher Nolan: the director behind the 2014 sci-\ufb01/adventure cinematic \u2018Interstellar,\u2019 \n", "extractionText": "to be a very intellectual and imaginative inventive talent", "afterText": ".  \nHis style in his previous \ufb01lms sets characters in epic unique locations, with gargantuan issues to \nface, and artistically impresses the audience ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Christopher Nolan</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">very intellectual and imaginative inventive</span>}</div>"}, {"index": 1, "class": "opinion_statement", "text": "artistically impresses the audience", "color": "#C8E6C9", "startPos": 338, "endPos": 373, "beforeText": "ual and imaginative inventive talent.  \nHis style in his previous \ufb01lms sets characters in epic unique locations, with gargantuan issues to \nface, and ", "extractionText": "artistically impresses the audience", "afterText": " with how the characters solve their problems. For \nexample, in Nolan\u2019s 2010 \ufb01lm \u2018Inception,\u2019 he tackles the idea of dreams, and sets his characters \n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the audience</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">artistically impresses</span>}</div>"}, {"index": 2, "class": "opinion_statement", "text": "is so farfetched", "color": "#C8E6C9", "startPos": 627, "endPos": 643, "beforeText": " the idea of dreams, and sets his characters \ndiving through dreams within dreams within even more dreams to complete their goals. Because \nthis idea ", "extractionText": "is so farfetched", "afterText": ", and dreams are a subject in which science has made little factual \ndiscovery in, Nolan is free to use his creativity to present ideas such as landsc", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The idea</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">so farfetched</span>}</div>"}, {"index": 3, "class": "audience_impact", "text": "without seeming unrealistic", "color": "#D2E3FC", "startPos": 848, "endPos": 875, "beforeText": "ttle factual \ndiscovery in, Nolan is free to use his creativity to present ideas such as landscapes folding in on \nthemselves and corridors spinning, ", "extractionText": "without seeming unrealistic", "afterText": ". \nThis brain-racking epic theme is once again evident in \u2018Interstellar,\u2019 as Nolan sets his characters \nduring a second American dust bowl on future E", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">comfortable, trusting</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">Nolan is free to use his creativity</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the audience</span>}</div>"}, {"index": 4, "class": "opinion_statement", "text": "a truly clever plot", "color": "#C8E6C9", "startPos": 986, "endPos": 987, "beforeText": "s spinning, without seeming unrealistic. \nThis brain-racking epic theme is once again evident in \u2018Interstellar,\u2019 as Nolan sets his characters \nduring ", "extractionText": "a", "afterText": " second American dust bowl on future Earth. The world is short of food, and will soon be \nuninhabitable. So, ex-NASA pilot \u2018Cooper\u2019 (Matthew McConaugh", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The plot</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">truly clever</span>}</div>"}, {"index": 5, "class": "opinion_statement", "text": "a truly clever plot", "color": "#C8E6C9", "startPos": 1265, "endPos": 1266, "beforeText": "er\u2019 (Matthew McConaughey) is summoned back to space \ntravel in a bid to \ufb01nd a new planet for the species to inhabit. Luckily for Cooper and his team, ", "extractionText": "a", "afterText": " \nblack hole orbiting Saturn can transport them further into space to land on these potential \nplanets. \nThroughout the \ufb02ick, the crew explore multipl", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The plot</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">truly clever</span>}</div>"}, {"index": 6, "class": "opinion_statement", "text": "seems like an in\ufb01nite sea of two feet deep water", "color": "#C8E6C9", "startPos": 1625, "endPos": 1674, "beforeText": "o create crazy scenarios. For example, one planet that Cooper and his friends, \n\u2018Brand,\u2019 (Anne Hathaway) and \u2018Romilly,\u2019 (David Gyasi) visit initially ", "extractionText": "seems like an in\ufb01nite sea of two \nfeet deep water", "afterText": ". Not threatening at all right? Well think again, because the crew suddenly \ufb01nd out \nthat a giant 100ft tidal wave is about to hit them, and they have", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">one planet</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">in\ufb01nite sea</span>}</div>"}, {"index": 7, "class": "opinion_statement", "text": "Not threatening at all right?", "color": "#C8E6C9", "startPos": 1676, "endPos": 1705, "beforeText": "hat Cooper and his friends, \n\u2018Brand,\u2019 (Anne Hathaway) and \u2018Romilly,\u2019 (David Gyasi) visit initially seems like an in\ufb01nite sea of two \nfeet deep water. ", "extractionText": "Not threatening at all right?", "afterText": " Well think again, because the crew suddenly \ufb01nd out \nthat a giant 100ft tidal wave is about to hit them, and they have minutes to \ufb02y away. Nolan furt", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the situation</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Not threatening at all</span>}</div>"}, {"index": 8, "class": "opinion_statement", "text": "they have minutes to \ufb02y away", "color": "#C8E6C9", "startPos": 1815, "endPos": 1843, "beforeText": "eep water. Not threatening at all right? Well think again, because the crew suddenly \ufb01nd out \nthat a giant 100ft tidal wave is about to hit them, and ", "extractionText": "they have minutes to \ufb02y away", "afterText": ". Nolan further \nincreases the stakes in this scene as it is explained that every hour spent on this planet counts for \nseven years on earth, meaning ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the crew</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">minutes to \ufb02y away</span>}</div>"}, {"index": 9, "class": "opinion_statement", "text": "further increases the stakes", "color": "#C8E6C9", "startPos": 1851, "endPos": 1880, "beforeText": "ght? Well think again, because the crew suddenly \ufb01nd out \nthat a giant 100ft tidal wave is about to hit them, and they have minutes to \ufb02y away. Nolan ", "extractionText": "further \nincreases the stakes", "afterText": " in this scene as it is explained that every hour spent on this planet counts for \nseven years on earth, meaning the planet will be destroyed before t", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">this scene</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">further increases</span>}</div>"}, {"index": 10, "class": "opinion_statement", "text": "I know. Mental.", "color": "#C8E6C9", "startPos": 2326, "endPos": 2341, "beforeText": "ntation of a larger dimension) to \ufb01nd the \u2018secret to harnessing gravity\u2019 \nwhich will let the human race bend space-time in order to survive o\ufb00 earth. ", "extractionText": "I know. Mental.", "afterText": " \nThe imagination that Nolan possesses and implicates into \u2018Interstellar\u2019 is farfetched and \nwonderful, not only impressing his audience with the appe", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the crew</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Mixed</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">I know. Mental.</span>}</div>"}, {"index": 11, "class": "opinion_statement", "text": "The imagination that Nolan possesses and implicates into \u2018Interstellar\u2019 is farfetched and wonderful", "color": "#C8E6C9", "startPos": 2343, "endPos": 2443, "beforeText": "er dimension) to \ufb01nd the \u2018secret to harnessing gravity\u2019 \nwhich will let the human race bend space-time in order to survive o\ufb00 earth. I know. Mental. \n", "extractionText": "The imagination that Nolan possesses and implicates into \u2018Interstellar\u2019 is farfetched and \nwonderful", "afterText": ", not only impressing his audience with the appealing visuals he creates, but induces \nthem to think and discuss what is going on due its scienti\ufb01c de", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The imagination that Nolan possesses and implicates into \u2018Interstellar\u2019</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">farfetched and wonderful</span>}</div>"}, {"index": 12, "class": "audience_impact", "text": "not only impressing his audience with the appealing visuals he creates, but induces them to think and discuss what is going on due its scienti\ufb01c depth", "color": "#D2E3FC", "startPos": 2445, "endPos": 2596, "beforeText": " in order to survive o\ufb00 earth. I know. Mental. \nThe imagination that Nolan possesses and implicates into \u2018Interstellar\u2019 is farfetched and \nwonderful, ", "extractionText": "not only impressing his audience with the appealing visuals he creates, but induces \nthem to think and discuss what is going on due its scienti\ufb01c depth", "afterText": ". Personally, as someone who is \nbamboozled by the idea of how big the universe is, I \ufb01nd it unendingly entertaining to repeatedly \nwatch this \ufb01lm and", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">curious, engaged</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">the appealing visuals he creates</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the audience</span>}</div>"}, {"index": 13, "class": "opinion_statement", "text": "I \ufb01nd it unendingly entertaining", "color": "#C8E6C9", "startPos": 2680, "endPos": 2712, "beforeText": "them to think and discuss what is going on due its scienti\ufb01c depth. Personally, as someone who is \nbamboozled by the idea of how big the universe is, ", "extractionText": "I \ufb01nd it unendingly entertaining", "afterText": " to repeatedly \nwatch this \ufb01lm and understanding it more each time, and can only hope the technology portrayed \nwill one day come true. \nOverall, \u2018Int", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">it</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">unendingly entertaining</span>}</div>"}, {"index": 14, "class": "audience_impact", "text": "can only hope the technology portrayed will one day come true", "color": "#D2E3FC", "startPos": 2784, "endPos": 2846, "beforeText": "ozled by the idea of how big the universe is, I \ufb01nd it unendingly entertaining to repeatedly \nwatch this \ufb01lm and understanding it more each time, and ", "extractionText": "can only hope the technology portrayed \nwill one day come true", "afterText": ". \nOverall, \u2018Interstellar\u2019 is a clear example of Nolan\u2019s auteur talent, as he once again \ufb01gments yet \nanother cluster of conditions for us to marvel a", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">hopeful, excited</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">the technology portrayed</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the reviewer</span>}</div>"}, {"index": 15, "class": "opinion_statement", "text": "a fantastic score from world famous composer Hanz Zimmer", "color": "#C8E6C9", "startPos": 3004, "endPos": 3061, "beforeText": "ll, \u2018Interstellar\u2019 is a clear example of Nolan\u2019s auteur talent, as he once again \ufb01gments yet \nanother cluster of conditions for us to marvel at. With ", "extractionText": "a fantastic score from world famous \ncomposer Hanz Zimmer", "afterText": ", his epic, orchestral theme sets the audience in the palm of his hands as \nwe stress over how we are all going to be saved once again.\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">a fantastic score from world famous composer Hanz Zimmer</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">fantastic score</span>}</div>"}, {"index": 16, "class": "audience_impact", "text": "his epic, orchestral theme sets the audience in the palm of his hands", "color": "#D2E3FC", "startPos": 3063, "endPos": 3132, "beforeText": "ent, as he once again \ufb01gments yet \nanother cluster of conditions for us to marvel at. With a fantastic score from world famous \ncomposer Hanz Zimmer, ", "extractionText": "his epic, orchestral theme sets the audience in the palm of his hands", "afterText": " as \nwe stress over how we are all going to be saved once again.\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">stressed</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">his epic, orchestral theme</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the audience</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
