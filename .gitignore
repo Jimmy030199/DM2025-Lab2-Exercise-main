@@ -4,4 +4,26 @@ config/.env
 .venv/
 *.bin
 *.gz
+*.csv
 
+.ipynb_checkpoints/
+
+.DS_Store
+.vscode/
+.idea/
+
+**/checkpoint-*/
+best_distilbert_emotion/
+distilbert_emotion/
+
+*.zip
+*.tar
+*.gz
+
+*.csv
+*.tsv
+*.xlsx
+*.json
+*.npy
+*.npz
+*.pkl
