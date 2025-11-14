@@ -27,3 +27,9 @@ distilbert_emotion/
 *.npy
 *.npz
 *.pkl
+
+*.pt
+*.safetensors
+*.bin
+*.ckpt
+*.txt
